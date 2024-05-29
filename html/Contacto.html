@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style1.css">
+    <title>Contacto</title>
+    <link rel="icon" href="../img/logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+<!-- Barras de navegación. -->
+<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+    <div class="bg-dark p-4">
+        <h5 class="text-body-emphasis h4">Jesús Montero Carrascoso</h5>
+        <span class="text-body-secondary">
+            <img id="fotoperfil" src="../img/logo.jpg">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Curriculum.html">Curriculum</a></li>
+                <li><a href="Sobremi.html">Sobre Mi</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Gallery.html">Galeria de actividades</a></li>
+            </ul>
+        </span>
+    </div>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+<!--Formulario contacto-->
+
+<div class="container">
+<div class="col-md-7 col-lg-8">
+    <h4 class="mb-3">Formulario de Contacto</h4>
+    <form class="needs-validation" novalidate>
+        <!-- Alerta Bootstrap -->
+        <div id="formAlert" class="alert alert-danger d-none" role="alert">
+            Por favor, rellene el formulario correctamente.
+        </div>
+        <div class="mb-3">
+            <label for="firstName" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="firstName" required>
+            <div class="invalid-feedback">Se requiere un nombre válido.</div>
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="lastName" required>
+            <div class="invalid-feedback">Se requieren apellidos válidos.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Género</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
+                <label class="form-check-label" for="genderMale">Masculino</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
+                <label class="form-check-label" for="genderFemale">Femenino</label>
+            </div>
+            <div class="invalid-feedback">Seleccione su género.</div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Ingrese una dirección de correo electrónico válida.</div>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+            <div class="invalid-feedback">Ingrese un mensaje.</div>
+        </div>
+        <div class="mb-3">
+            <label for="reason" class="form-label">Motivo de Consulta</label>
+            <select class="form-select" id="reason" required>
+                <option value="">Seleccione...</option>
+                <option value="consulta_general">Consulta General</option>
+                <option value="soporte_tecnico">Soporte Técnico</option>
+                <option value="feedback">Feedback</option>
+            </select>
+            <div class="invalid-feedback">Seleccione un motivo de consulta.</div>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terms" required>
+            <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+            <div class="invalid-feedback">Debe aceptar los términos y condiciones.</div>
+        </div>
+        <button class="btn btn-primary w-100" type="submit">Enviar</button>
+        <script src="../js/verificacion.js"></script>
+    </form>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Formulario Enviado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                La ID de solicitud es: <span id="solicitudIdDisplay"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+    </div>
+
+    <!-- LinkedIn Badge -->
+    <a href="http://www.linkedin.com/in/jesus-montero-carrascoso-7610431a4" target="_blank" rel="noopener noreferrer" class="badge bg-primary">LinkedIn</a>
+
+    <!-- Twitter Badge -->
+    <a href="https://x.com/chechuriia?s=11" target="_blank" rel="noopener noreferrer" class="badge bg-dark">Twitter</a>
+
+    <!-- Instagram Badge -->
+    <a href="https://www.instagram.com/chechumontero/" target="_blank" rel="noopener noreferrer" class="badge bg-danger">Instagram</a>
+
+</footer>
+
+<script src="../js/verificacion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
