@@ -10,29 +10,33 @@
 </head>
 <body>
 
-<!-- Barras de navegación. -->
-<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-    <div class="bg-dark p-4">
-        <h5 class="text-body-emphasis h4">Jesús Montero Carrascoso</h5>
-        <span class="text-body-secondary">
-            <img id="fotoperfil" src="../img/logo.jpg">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Curriculum.html">Curriculum</a></li>
-                <li><a href="Sobremi.html">Sobre Mi</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-                <li><a href="Gallery.html">Galeria de actividades</a></li>
-            </ul>
-        </span>
+<!-- Barras de navegación -->
+<header class="header">
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-dark p-4">
+            <div class="header-content d-flex align-items-center justify-content-between">
+                <h5 class="text-body-emphasis h4">Jesús Montero Carrascoso</h5>
+                <img id="fotoperfil" src="../img/logo.jpg" alt="Foto de perfil" class="rounded-circle">
+            </div>
+            <nav>
+                <ul class="nav-links list-unstyled d-flex flex-column flex-md-row gap-2 mt-3">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="Curriculum.html" class="nav-link">Curriculum</a></li>
+                    <li><a href="Sobremi.html" class="nav-link">Sobre Mi</a></li>
+                    <li><a href="Contacto.html" class="nav-link">Contacto</a></li>
+                    <li><a href="Gallery.html" class="nav-link">Galeria de actividades</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</nav>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+</header>
 
 <!--Formulario contacto-->
 

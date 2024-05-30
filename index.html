@@ -11,29 +11,33 @@
 </head>
 <body>
 
-<!-- Barras de navegación. -->
-<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-    <div class="bg-dark p-4">
-        <h5 class="text-body-emphasis h4">Jesús Montero Carrascoso</h5>
-        <span class="text-body-secondary">
-            <img id="fotoperfil" src="img/logo.jpg">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="html/Curriculum.html">Curriculum</a></li>
-                <li><a href="html/Sobremi.html">Sobre Mi</a></li>
-                <li><a href="html/Contacto.html">Contacto</a></li>
-                <li><a href="html/Gallery.html">Galeria de actividades</a></li>
-            </ul>
-        </span>
+<!-- Barras de navegación -->
+<header class="header">
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-dark p-4">
+            <div class="header-content d-flex align-items-center justify-content-between">
+                <h5 class="text-body-emphasis h4">Jesús Montero Carrascoso</h5>
+                <img id="fotoperfil" src="img/logo.jpg" alt="Foto de perfil" class="rounded-circle">
+            </div>
+            <nav>
+                <ul class="nav-links list-unstyled d-flex flex-column flex-md-row gap-2 mt-3">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="html/Curriculum.html" class="nav-link">Curriculum</a></li>
+                    <li><a href="html/Sobremi.html" class="nav-link">Sobre Mi</a></li>
+                    <li><a href="html/Contacto.html" class="nav-link">Contacto</a></li>
+                    <li><a href="html/Gallery.html" class="nav-link">Galeria de actividades</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</nav>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+</header>
 
 <!-- Presentación -->
 <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
@@ -47,7 +51,7 @@
 
         <div class="texto">
             <h1 class="display-4 fst-italic">¡Hola! Soy Jesús Montero Carrascoso</h1>
-            <p class="lead my-3">Bienenido a mi portafolio web. Soy un apasionado de todo lo desarrollado con el desarrollo web, en la creación de sitios web y aplicaciones intuitivas, funcionales y visualmente atractivas.
+            <p class="lead my-3">Bienenido a mi portafolio web. Soy un apasionado del desarrollo web y aplicaciones intuitivas, funcionales y visualmente atractivas.
             Mi objetivo es transformar ideas en experiencias digitales excepcionales.</p>
         </div>
     </div>
@@ -59,8 +63,8 @@
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
                 <h3 class="mb-0">¿Quién soy?</h3>
-                <p class="card-text mb-auto">Soy estudiante de Desarrollo de Aplicaciones WEB, me gustaria especializarme en backend o ciberseguridad.
-                <br>Me encanta trabajar el proyectos desafiantes donde pueda desarrollar mis habilidades creativas y aportar soluciones innovadoras.</p>
+                <p class="card-text mb-auto">Soy estudiante de Desarrollo de Aplicaciones WEB, me gustaría especializarme en backend o ciberseguridad.
+                <br>Me encanta trabajar en proyectos desafiantes donde pueda desarrollar mis habilidades creativas y aportar soluciones innovadoras.</p>
             </div>
         </div>
     </div>
@@ -68,8 +72,8 @@
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
                 <h3 class="mb-0">¿Qué hago?</h3>
-                <p class="mb-auto">Utiliza tecnologías modernas como HTML5, CSS3, Java, JavaScript etc...
-                    Diseño interfaces de usuarios centradas en la experiencia de usuari, intuitivas y agradables.
+                <p class="mb-auto">Utilizo tecnologías modernas como HTML5, CSS3, Java, JavaScript etc...
+                    Diseño interfaces de usuarios centradas en la experiencia de usuario, intuitivas y agradables.
                     Para saber más sobre mis conocimientos profesionales te dejo el enlace a mi curriculum donde lo explico más detallado.</p>
                 <a href="html/Curriculum.html" class="icon-link gap-1 icon-link-hover stretched-link">
                     Ir a Curriculum.
