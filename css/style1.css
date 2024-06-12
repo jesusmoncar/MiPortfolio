@@ -5,6 +5,12 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+@media (max-width: 767px) {
+    /* Tamaño de letra para dispositivos móviles */
+    body {
+        font-size: 14px; /* Puedes ajustar el tamaño de letra según tus preferencias */
+    }
+}
 
 footer {
     background-color: #f8f9fa;
@@ -15,7 +21,7 @@ footer .badge {
     margin-right: 10px;
 }
 
-/* Responsive styles */
+/* Responsive styles barra de navegacion*/
 @media (min-width: 768px) {
     .encabezado {
         flex-direction: row;
@@ -107,6 +113,7 @@ footer .text-body-secondary {
 
 /* Estilos para las fotos */
 .fotoperfil svg {
+    background-image: url("../img/yo.JPG");
     border-radius: 100%;
     width: 200px;
     height: 200px;
@@ -119,7 +126,7 @@ footer .text-body-secondary {
 
 /* Estilos específicos para la página index */
 .fotoperfil .bd-placeholder-img {
-    background-image: url('../img/yo.jpg');
+    background-image: url('../img/yo.JPG');
     background-size: cover;
     background-position: center;
 }
@@ -188,6 +195,19 @@ img{
     border-radius: 0;
 }
 
-.miimagen{
-    width: 30vh;
+/* Estilos generales para reducir márgenes y padding */
+.miimagen img {
+    height: 30vh;
 }
+.texto-sobremi{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+
