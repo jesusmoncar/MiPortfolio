@@ -107,6 +107,7 @@ footer .text-body-secondary {
 
 /* Estilos para las fotos */
 .fotoperfil svg {
+    border-radius: 100%;
     width: 200px;
     height: 200px;
 }
@@ -127,9 +128,10 @@ footer .text-body-secondary {
 /* Centra el formulario horizontalmente */
 .container-formulario {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajusta esto según tu diseño */
+    height: 100vh; /* tamaño que ocupara*/
 }
 
 /* Ajusta el ancho máximo del formulario */
@@ -142,7 +144,7 @@ footer .text-body-secondary {
     border-right: 1px solid #ced4da; /* Bordes derechos */
     padding-left: 15px; /* Ajusta el relleno izquierdo para dejar espacio entre el borde y el contenido */
     padding-right: 15px; /* Ajusta el relleno derecho para dejar espacio entre el borde y el contenido */
-    max-width: 700px; 
+    max-width: 700px;
 }
 
 
@@ -150,4 +152,39 @@ footer .text-body-secondary {
     width: 100%; /* Establece el ancho al 100% del contenedor padre */
     height: 40vh; /* Establece la altura deseada */
     object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio disponible */
+}
+.container-fluid{
+    display: flex;
+}
+img{
+    border-radius: 100%;
+    width: 30vh;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container-fluid {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+.container{
+    align-items: center;
+}
+.container-fluid {
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+#curriculum{
+    border-radius: 0;
+    width: 100vh;
+    max-width: calc(100% - 40px); /* Restar el doble del margen al 100% */
+    max-height: calc(100% - 40px); /* Restar el doble del margen al 100% */
+    margin: 20px; /* Establecer el margen deseado */
+}
+
+.card-img-top{
+    border-radius: 0;
 }
