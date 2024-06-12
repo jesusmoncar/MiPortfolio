@@ -173,7 +173,6 @@ img{
     align-items: center;
 }
 .container-fluid {
-    flex-direction: column;
     justify-content: center; /* Centra horizontalmente los elementos */
     align-items: center; /* Centra verticalmente los elementos */
 }
@@ -187,4 +186,8 @@ img{
 
 .card-img-top{
     border-radius: 0;
+}
+
+.miimagen{
+    width: 30vh;
 }
