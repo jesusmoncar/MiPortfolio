@@ -190,23 +190,28 @@ img{
     margin: 20px; /* Establecer el margen deseado */
 }
 
-.card-img-top{
-    border-radius: 0;
+/* Estilos generales para la imagen */
+.miimagen img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Estilos generales para reducir márgenes y padding */
-.miimagen img {
-    height: 30vh;
-}
-.texto-sobremi{
+/* Centrar el texto */
+.texto-sobremi {
     text-align: center;
 }
 
+/* Ajustes específicos para pantallas medianas (tablets) y mayores */
 @media (min-width: 768px) {
-.container-fluid{
-    display: flex;
-    flex-direction: column;
-}
+    .texto-sobremi {
+        margin-bottom: 20px; /* Ajusta este valor según el espacio deseado */
+    }
+
+    .miimagen {
+        margin-top: 20px; /* Ajusta este valor según el espacio deseado */
+    }
 }
 
 
